@@ -120,10 +120,21 @@ Copy the questions below into the firt-lastname.txt file on your github repo - a
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
-    2. What happens when an element is positioned absolutely? 
+        Inline elements do not have a break line before or after them so they allow other elements to sit to their left and right. Block elements have a line break after the element and the width, if not specified, takes up 100%.
+
+    2. What happens when an element is positioned absolutely?
+        The element is remmoved from the normal flow of the document and no space is created for the element int the page layout.
+
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        Set the display property to block or inline block.
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        Display block by default: <div>, <p>, <section>
+        Display inline by default: <span>, <a>
+        Display inline-block by default: <img>
+
     5. In your own words, explain the box model. What is the fix for the box model? 
+        The box model refers to how the content of HTML elements are surrounded/wrapped by boxes. These boxes include padding, border, margin and the content itself. Using the box model we can manipulate space between elements. The problem with the box model is that height and width applied to elements is only applied to the the content box and will be in addition to any border, margin, or padding it has. This causes the developer to constantly adjust these values. The box-sizing property along with the border-box value solves this problem. Box-sizing: border-box will account for any border and padding the element has when setting the height and width. More simply put, the height and width properties now include the content, padding and border (but not the margin). 
 
 
 
